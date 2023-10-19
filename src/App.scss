@@ -1,0 +1,66 @@
+@import "./common/common.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary-color;
+}
+html {
+    background: black;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: $primary-color;
+}
+h1, h2, h3, h4 {
+    margin-bottom: 1.5rem;
+}
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+}
+.container {
+    padding: 1rem 2rem;
+}
+.active {
+    font-weight: 700;
+    text-decoration: underline;
+}
+button {
+    padding: 1rem;
+    background: transparent;
+    border-radius: .3rem;
+    border: 1px solid $purple;
+}
+.back-arrow {
+    color: $secondary-orange;
+    cursor: pointer;
+    margin-bottom: 1rem;
+
+    path {
+        color: $secondary-orange;
+    }
+}
+
+//Swiper JS
+.swiper-wrapper {
+    padding: .5rem;
+}
+.swiper-pagination {
+    position: relative !important;
+    padding: 2rem;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: $orange;
+}
+.swiper-button-prev, .swiper-button-next {
+    color: $orange !important;
+}
